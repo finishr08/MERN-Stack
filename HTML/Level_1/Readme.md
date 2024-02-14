@@ -19,5 +19,26 @@ This document serves as a guide for your Level 1 HTML journey, introducing funda
 * Boldface specific text to emphasize it.
 * Use `<b>` for simple highlighting, or consider more semantic alternatives like `<strong>` for important information.
 
+### List Tag
+
+* Order lists `<ol>` display items in a specific order with numerical bullets.
+* Unordered lists `<ul>` display items without a specific order, often using bullet points.
+* Use list items `<li>` within each list.
+
+### Anchors
+
+* Create links to other sections of the same page or external websites.
+* Use `<a>` with a href attribute specifying the target location.
+
+
+### Images
+* Embed images into your webpage.
+* Use `<img>` with attributes like `src` (image source) and `alt` (alternative text for accessibility).
+
+
+### Comments
+
+* Add hidden notes for yourself or collaborators.
+* Use for (multi-line comments) and for short notes.
 
 *I hope this helps!*
