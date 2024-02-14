@@ -6,14 +6,25 @@ This document serves as a guide for your Level 2 HTML journey, introducing funda
 
 ### Heading Tags
 
-### Inline vs. Block Elements:
+**Inline vs. Block Elements**
 
-* Inline elements sit on the same line, flow around other content, and have no line breaks before or after themselves. Examples: `b`, `i`, `a`, `span`, `sup`, `sub`.
-* Block elements start on a new line, take up the full width available, and have line breaks before and after themselves. Examples: `p`, `h1`, `h2`, `div`, `ul`, `ol`, `table`.
+- Inline elements sit on the same line, flow around other content, and have no line breaks before or after themselves. 
+
+**Examples:**
+
+```html
+`b`, `i`, `a`, `span`, `sup`, `sub`.
+```
+
+- Block elements start on a new line, take up the full width available, and have line breaks before and after themselves. 
+
+**Examples:** 
+
+```html
+`p`, `h1`, `h2`, `div`, `ul`, `ol`, `table`.
+```
 
 I'd be glad to provide a comprehensive response encompassing the best aspects of previous responses and addressing their shortcomings:
-
-**HTML Tags:**
 
 **Horizontal Rule (`<hr>`)**
 
