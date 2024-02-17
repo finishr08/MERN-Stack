@@ -14,6 +14,7 @@ This document serves as a guide for your Level 2 HTML journey, introducing funda
 
 ```html
 `b`, `i`, `a`, `span`, `sup`, `sub`.
+These are Inline Elements.
 ```
 
 - Block elements start on a new line, take up the full width available, and have line breaks before and after themselves. 
@@ -21,7 +22,8 @@ This document serves as a guide for your Level 2 HTML journey, introducing funda
 **Examples:** 
 
 ```html
-`p`, `h1`, `h2`, `div`, `ul`, `ol`, `table`.
+`p`, `h1`, `h2`, `div`, `ul`, `ol`, `table`
+These are Block Elements.
 ```
 
 I'd be glad to provide a comprehensive response encompassing the best aspects of previous responses and addressing their shortcomings:

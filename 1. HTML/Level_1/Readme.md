@@ -25,6 +25,21 @@ This document serves as a guide for your Level 1 HTML journey, introducing funda
 * Unordered lists `<ul>` display items without a specific order, often using bullet points.
 * Use list items `<li>` within each list.
 
+```html
+<h3>Ordered List</h3>
+<ol>
+<li>list</li>
+<li>list</li>
+<li>list</li>
+</ol>
+<h3>Unordered List</h3>
+<ul>
+<li>list</li>
+<li>list</li>
+<li>list</li>
+</ul>
+```
+
 ### Anchors
 
 * Create links to other sections of the same page or external websites.

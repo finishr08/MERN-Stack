@@ -44,13 +44,17 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 **Examples:**
 ```html
 <h3>Ordered List</h3>
-<ul>
-<li>list</li>
-</ul>
-<h3>Unordered List</h3>
 <ol>
 <li>list</li>
+<li>list</li>
+<li>list</li>
 </ol>
+<h3>Unordered List</h3>
+<ul>
+<li>list</li>
+<li>list</li>
+<li>list</li>
+</ul>
 ```
 
 **Anchors**
@@ -60,7 +64,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 
 **Examples:**
 ```html
-<a href=""></a>
+<a href="https://github.com/finishr08/">GitHub</a>
 ```
 
 **Images**
@@ -70,7 +74,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 
 **Examples:**
 ```html
-<img src="" alt="">
+<img src="Your Source" alt="Your alternate">
 ```
 
 **Comments**
@@ -92,6 +96,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 
 ```html
 `b`, `i`, `a`, `span`, `sup`, `sub`.
+These are Inline elements.
 ```
 
 - Block elements start on a new line, take up the full width available, and have line breaks before and after themselves. 
@@ -100,6 +105,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 
 ```html
 `p`, `h1`, `h2`, `div`, `ul`, `ol`, `table`.
+These are Block elements.
 ```
 
 I'd be glad to provide a comprehensive response encompassing the best aspects of previous responses and addressing their shortcomings:
