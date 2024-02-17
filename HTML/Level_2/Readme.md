@@ -1,4 +1,4 @@
-# Level 1 HTML
+# Level 2 HTML
 
 This document serves as a guide for your Level 2 HTML journey, introducing fundamental tags for structuring and formatting web content.
 
