@@ -25,7 +25,7 @@ This document serves as a guide for your Level 3 HTML journey, introducing funda
 
 **Context**
 
-These elements and attributes work together to build structured tables in HTML. For example:
+These elements and attributes work together to build structured tables in HTML. 
 
 ```html
 <table>
@@ -88,7 +88,6 @@ These elements and attributes work together to build structured tables in HTML. 
     - `step`: The increment between values (default: 1).
     - `value`: The initial selected value.
 
-**Example:**
 
 ```html
 <label for="volume">Volume:</label>
@@ -106,7 +105,6 @@ These elements and attributes work together to build structured tables in HTML. 
     - `cols`: The initial number of visible text columns (default: 20).
     - `placeholder`: Hint text displayed when the textarea is empty.
 
-**Example:**
 
 ```html
 <label for="message">Message:</label>
@@ -151,7 +149,6 @@ These elements and attributes work together to build structured tables in HTML. 
     - `value`: Text displayed on the button.
     - `disabled`: Disables the button if set.
 
-**Example:**
 
 ```html
 <form action="/signup" method="post">

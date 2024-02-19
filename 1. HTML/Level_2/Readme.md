@@ -10,7 +10,6 @@ This document serves as a guide for your Level 2 HTML journey, introducing funda
 
 - Inline elements sit on the same line, flow around other content, and have no line breaks before or after themselves. 
 
-**Examples:**
 
 ```html
 `b`, `i`, `a`, `span`, `sup`, `sub`.
@@ -19,7 +18,6 @@ These are Inline Elements.
 
 - Block elements start on a new line, take up the full width available, and have line breaks before and after themselves. 
 
-**Examples:** 
 
 ```html
 `p`, `h1`, `h2`, `div`, `ul`, `ol`, `table`
@@ -33,7 +31,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
 - Creates a thematic break, visually separating content sections.
 - No closing tag required.
 
-**Example:**
 
 ```html
 <p>This is the first section.</p>
@@ -50,7 +47,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
     - `id`: Uniquely identifies the element.
     - `class`: Assigns a class for shared styles.
 
-**Example:**
 
 ```html
 <p>This is a sentence with <span style="color: red; font-weight: bold;">important information</span>.</p>
@@ -65,7 +61,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
     - `id`: Uniquely identifies the element.
     - `class`: Assigns a class for shared styles.
 
-**Example:**
 
 ```html
 <div class="container">
@@ -80,7 +75,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
 - Requires closing tag.
 - No specific attributes.
 
-**Example:**
 
 ```html
 The formula for water is H<sub>2</sub>O.
@@ -92,7 +86,6 @@ The formula for water is H<sub>2</sub>O.
 - Requires closing tag.
 - No specific attributes.
 
-**Example:**
 
 ```html
 The subscript '2' in X<sub>2</sub> indicates diatomic oxygen.
