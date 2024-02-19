@@ -7,7 +7,8 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 
 * Provide hierarchical structure to page sections.
 * Use `<h1>` for the main title, `<h2>` for subtitles, and so on, descending to `<h6>`.
-**Examples:**
+
+
 ```html
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -21,7 +22,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 * Defines a block of text, typically wrapped at line breaks.
 * Use `<p>` for each distinct paragraph.
 
-**Examples:**
+
 ```html
 <p>Paragraph Tag</p>
 ```
@@ -31,7 +32,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 * Boldface specific text to emphasize it.
 * Use `<b>` for simple highlighting, or consider more semantic alternatives like `<strong>` for important information.
 
-**Examples:**
+
 ```html
 <b>Bold tag</b>
 ```
@@ -42,7 +43,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 * Unordered lists `<ul>` display items without a specific order, often using bullet points.
 * Use list items `<li>` within each list.
 
-**Examples:**
+
 ```html
 <h3>Ordered List</h3>
 <ol>
@@ -63,7 +64,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 * Create links to other sections of the same page or external websites.
 * Use `<a>` with a href attribute specifying the target location.
 
-**Examples:**
+
 ```html
 <a href="https://github.com/finishr08/">GitHub</a>
 ```
@@ -73,7 +74,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 * Embed images into your webpage.
 * Use `<img>` with attributes like `src` (image source) and `alt` (alternative text for accessibility).
 
-**Examples:**
+
 ```html
 <img src="Your Source" alt="Your alternate">
 ```
@@ -83,7 +84,7 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 - Add hidden notes for yourself or collaborators.
 - Use for (multi-line comments) and for short notes.
 
-**Examples:**
+
 ```html
 <p>This is Comment</p>
 <!-- This is Comment -->
@@ -93,7 +94,6 @@ This document serves as a guide for your HTML journey, introducing fundamental t
 
 - Inline elements sit on the same line, flow around other content, and have no line breaks before or after themselves. 
 
-**Examples:**
 
 ```html
 `b`, `i`, `a`, `span`, `sup`, `sub`.
@@ -102,8 +102,7 @@ These are Inline elements.
 
 - Block elements start on a new line, take up the full width available, and have line breaks before and after themselves. 
 
-**Examples:** 
-
+ 
 ```html
 `p`, `h1`, `h2`, `div`, `ul`, `ol`, `table`.
 These are Block elements.
@@ -116,7 +115,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
 - Creates a thematic break, visually separating content sections.
 - No closing tag required.
 
-**Example:**
 
 ```html
 <p>This is the first section.</p>
@@ -133,7 +131,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
     - `id`: Uniquely identifies the element.
     - `class`: Assigns a class for shared styles.
 
-**Example:**
 
 ```html
 <p>This is a sentence with <span style="color: red; font-weight: bold;">important information</span>.</p>
@@ -148,7 +145,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
     - `id`: Uniquely identifies the element.
     - `class`: Assigns a class for shared styles.
 
-**Example:**
 
 ```html
 <div class="container">
@@ -163,7 +159,6 @@ I'd be glad to provide a comprehensive response encompassing the best aspects of
 - Requires closing tag.
 - No specific attributes.
 
-**Example:**
 
 ```html
 The formula for water is H<sub>2</sub>O.
@@ -175,7 +170,6 @@ The formula for water is H<sub>2</sub>O.
 - Requires closing tag.
 - No specific attributes.
 
-**Example:**
 
 ```html
 The subscript '2' in X<sub>2</sub> indicates diatomic oxygen.
@@ -200,7 +194,8 @@ The subscript '2' in X<sub>2</sub> indicates diatomic oxygen.
 
 **Context**
 
-These elements and attributes work together to build structured tables in HTML. For example:
+These elements and attributes work together to build structured tables in HTML. 
+
 
 ```html
 <table>
@@ -261,7 +256,6 @@ These elements and attributes work together to build structured tables in HTML. 
     - `step`: The increment between values (default: 1).
     - `value`: The initial selected value.
 
-**Example:**
 
 ```html
 <label for="volume">Volume:</label>
@@ -279,7 +273,6 @@ These elements and attributes work together to build structured tables in HTML. 
     - `cols`: The initial number of visible text columns (default: 20).
     - `placeholder`: Hint text displayed when the textarea is empty.
 
-**Example:**
 
 ```html
 <label for="message">Message:</label>
@@ -324,7 +317,6 @@ These elements and attributes work together to build structured tables in HTML. 
     - `value`: Text displayed on the button.
     - `disabled`: Disables the button if set.
 
-**Example:**
 
 ```html
 <form action="/signup" method="post">
@@ -340,7 +332,7 @@ These elements and attributes work together to build structured tables in HTML. 
 
 *Remember that CSS can be used to style forms for a better user experience. I hope this explanation is helpful!*
 
-**Remember:**
+**Remember**
 
 - HTML is case-sensitive (e.g., `<div>` is different from `<DIV>`).
 - Attributes go inside the opening tag (e.g., `<a href="https://example.com">Link</a>`).
