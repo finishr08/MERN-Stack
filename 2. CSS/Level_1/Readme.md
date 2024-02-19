@@ -7,6 +7,7 @@ There are three main ways to apply CSS to HTML elements:
 **Inline CSS**
 
 - Ideal for unique styles applied to a single element:
+
   ```html
   <h1 style="color: #f00; background-color: #0f0">This heading is red on green!</h1>
   ```
@@ -15,6 +16,7 @@ There are three main ways to apply CSS to HTML elements:
 **Internal CSS**
 
 - Suitable for styling a single HTML page within its `<head>` section:
+
   ```html
   <head>
     <style>
@@ -35,12 +37,14 @@ There are three main ways to apply CSS to HTML elements:
 **External CSS**
 
 - The preferred approach for styling multiple HTML pages:
+
   ```html
   <head>
     <link rel="stylesheet" href="styles.css">
   </head>
   ```
 - Create a separate `.css` file containing your CSS rules:
+
   ```css
   body {
     font-family: sans-serif;
@@ -54,16 +58,19 @@ There are three main ways to apply CSS to HTML elements:
     line-height: 1.5;
   }
   ```
+
 - Promotes reusability and maintainability.
 
 **CSS Syntax**
 
 - Declarations (rules) consist of selector(s) followed by curly braces `{}` containing property-value pairs separated by semicolons `;`:
+
   ```css
   selector {
     property: value;
   }
   ```
+  
 - Selectors target specific HTML elements using various patterns:
   - **Element type:** `h1`, `p`, `div`
   - **Class:** `.my-class`
