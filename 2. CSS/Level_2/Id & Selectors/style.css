@@ -1,0 +1,5 @@
+/* Q: Set the Colors of Paragraph inside div with the id "#myId" to green */
+
+#myId{
+    background-color: green;
+}
