@@ -1,5 +1,5 @@
 ## Level 3-CSS
-## CSS Box Model Explained
+## CSS Box Model
 
 In CSS, the box model is a fundamental concept that defines the layout of an element on a webpage. It's represented as a rectangular box composed of several components:
 
