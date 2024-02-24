@@ -1,6 +1,6 @@
 # CSS
 ## Cascading Style Sheet
-### Level 2
+### Level 2-CSS
 
 **Universal Selector (`*`)**
 
