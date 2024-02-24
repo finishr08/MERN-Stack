@@ -564,6 +564,53 @@ In CSS, the box model is a fundamental concept that defines the layout of an ele
 
    - **Advanced usage** Specify individual values for each corner using `border-top-left-radius`, `border-top-right-radius`, `border-bottom-left-radius`, and `border-bottom-right-radius`.
 
+### Inline Styles
+
+- **Purpose** Apply styles directly to an HTML element within its opening or closing tag using the `style` attribute.
+- **Pros** Simple for small changes, no need for separate CSS files.
+- **Cons** Overrides external styles, affects readability and maintainability for larger projects.
+
+```html
+<h1 style="color: red; font-size: 20px;">This is a heading</h1>
+```
+
+### Relative Units
+
+- **Purpose** Define measurements relative to a baseline value, allowing for layout adjustments based on other elements or the overall design.
+- **Types**
+    - **`em`** Relative to the **font size of the parent element**.
+    - **`rem`** Relative to the **font size of the root element (usually `html`)**.
+    - **`%`** Relative to the **width or height of the containing element**.
+- **Benefits**
+    - **Responsiveness** Adapt to different screen sizes and user preferences.
+    - **Maintainability** Avoids hard-coded pixel values, making updates easier.
+
+```css
+/* Using em */
+.paragraph {
+  font-size: 1.2em;  /* 1.2 times the parent's font size */
+}
+
+/* Using rem */
+h2 {
+  font-size: 1.5rem;  /* 1.5 times the root element's font size */
+}
+
+/* Using percentage */
+.container {
+  width: 80%; /* 80% of its parent's width */
+}
+```
+
+### em vs. rem
+
+Both `em` and `rem` are relative units used to scale elements based on another element's size. However, they differ in their reference point:
+
+- **`em`** Base on the **immediate parent element's font size**. This can lead to cascading growth if nested deeply, where sizes grow exponentially and become difficult to control.
+- **`rem`** Base on the **root element's (usually `html`) font size**. This offers a more consistent scale across the entire document, reducing the risk of cascading growth and making it easier to adjust the overall font size.
+
+**General Recommendation** Use `rem` in most cases for better maintainability and predictable scaling behavior.
+
 *I hope this helpful to you!*
 Remember that CSS has immense capabilities beyond these basics. Experiment and explore to personalize your web pages with visual flair and structure!
 
