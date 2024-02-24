@@ -1,0 +1,6 @@
+/* Qs3. Create a list of technologies - HTML, CSS, JavaScript, NodeJS, ReactJS, SQL, MongoDB, Java, C++, C & Python. 
+Now change the display of all list items to inline to move them all in a single line. */
+
+ul{
+    display: inline;
+}
