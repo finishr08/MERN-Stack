@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.circle{
+    margin: 50px;
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.eye1{
+    margin: 100px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+}
+.eye2{
+    margin-bottom: 99px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+}
+.mouth{
+    height: 30px;
+    width: 80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: red;
+    margin-left: 1.7in;
+}
