@@ -1,0 +1,27 @@
+h2 i{
+    color: brown;
+}
+span{
+    color: red;
+}
+.card{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+.animal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width:400px) {
+    .animal {
+        flex-wrap: wrap;
+    }
+  }
