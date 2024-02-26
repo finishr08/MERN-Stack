@@ -102,3 +102,73 @@ In this example:
 
 *This way, the heading font size is adjusted for different screen sizes, ensuring better readability on both mobile and larger screens.*
 
+
+## Z-index
+
+The `z-index` property in CSS is a crucial tool for **determining the order in which overlapping elements are displayed**. It essentially creates a **stacking context**, where elements with higher `z-index` values appear in front of elements with lower values.
+
+Here's a breakdown of how `z-index` works:
+
+**Stacking Order**
+
+Think of your webpage as a stack of transparent sheets. Elements with higher `z-index` values are placed on top of elements with lower values, just like sheets stacked on top of each other.
+
+**Usage**
+
+The `z-index` property can be applied to any element, but it only has an effect on **positioned elements** (elements with `position` set to `absolute`, `relative`, `fixed`, or `sticky`). Elements with `position: static` (the default) are not affected by `z-index`.
+
+Here's the basic syntax:
+
+```css
+selector {
+  position: /* any positioned value */;
+  z-index: value;
+}
+```
+
+**Important Points**
+
+- **Values** `z-index` accepts integer values. Higher values are displayed on top. By default, elements with no `z-index` specified have a value of `auto` (which usually translates to 0).
+- **Negative Values** You can also use negative values for `z-index` to position elements behind elements with a value of 0 (the default for non-positioned elements).
+- **Specificity** If two elements overlap and have the same `z-index`, the element that appears later in the CSS code takes precedence.
+- **Stacking Context** `z-index` only works within its own stacking context. Nested elements respect the `z-index` of their parent element's context.
+
+
+Let's create a simple example to understand `z-index`:
+
+```html
+<div class="box1">Box 1</div>
+<div class="box2">Box 2</div>
+```
+
+```css
+.box1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box2 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  z-index: 2; /* Box 2 will be on top of Box 1 */
+}
+```
+
+**In this example**
+
+- Both boxes are positioned absolutely, making them eligible for `z-index` manipulation.
+- Since Box 2 has a higher `z-index` of 2, it will be displayed on top of Box 1, even though Box 1 is defined first in the HTML.
+
+**When to Use `z-index`**
+
+- **Overlapping elements** Use `z-index` to control which element appears on top when elements overlap.
+- **Tooltips and dropdowns** Position tooltips and dropdowns above other content using `z-index`.
+- **Fixed elements** Control the stacking order of fixed elements (e.g., sticky headers) relative to other content.
+
+**Remember** Using `z-index` can make your CSS code more complex. Use it judiciously and only when necessary to avoid unintended layering issues.
