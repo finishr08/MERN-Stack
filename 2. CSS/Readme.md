@@ -993,5 +993,41 @@ Almost any CSS property can be animated, including:
 - `Background-color`: Change the element's background color.
 - `Height/Width`: Resize elements dynamically.
 
+**Media Types and Media Features**
+
+- **Media types** These specify the general type of device or output the website is intended for, such as `screen` (for computers and mobile screens), `print` (for printing), and `speech` (for screen readers).
+- **Media features** These provide more specific details about the viewing environment, such as screen size, resolution, color depth, orientation, and even user preferences.
+
+Here are some commonly used media features:
+
+- `max-width` and `min-width`: Used to check for the maximum or minimum width of the viewport (viewable area).
+- `orientation`: Checks for portrait or landscape mode.
+- `resolution`: Checks for screen resolution (e.g., `device-pixel-ratio: 1.5` for high-resolution screens).
+- `color`: Checks for the number of colors the display can support.
+
+
+Let's see how we can use a media query to change the font size of a heading depending on the screen size:
+
+```css
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+```
+
+In this example:
+
+- We check for two different conditions using separate `@media` rules.
+- The first rule applies only when the screen width is **less than or equal to 768px** (typical for mobile devices).
+- The second rule applies only when the screen width is **greater than or equal to 768px** (typical for tablets and desktops).
+
+*This way, the heading font size is adjusted for different screen sizes, ensuring better readability on both mobile and larger screens.*
 
 *I hope this help you!*

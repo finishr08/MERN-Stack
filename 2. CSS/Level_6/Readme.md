@@ -48,3 +48,57 @@ Almost any CSS property can be animated, including:
 - `Background-color`: Change the element's background color.
 - `Height/Width`: Resize elements dynamically.
 
+## Media Queries
+
+Media queries are a powerful tool in CSS that allows you to **apply different styles to your website depending on the device or viewing environment** it's being accessed from. This is crucial for creating a **responsive web design (RWD)**, where your website adapts seamlessly to different screen sizes, devices, and orientations.
+
+Here's a breakdown of what media queries are and how they work:
+
+**The @media Rule**
+
+The cornerstone of media queries is the `@media` rule. This rule acts as a container that holds the conditions you want to check and the CSS styles that will be applied if those conditions are met.
+
+
+```css
+@media media_query {
+  /* CSS styles to be applied if the media query is true */
+}
+```
+
+**Media Types and Media Features**
+
+- **Media types** These specify the general type of device or output the website is intended for, such as `screen` (for computers and mobile screens), `print` (for printing), and `speech` (for screen readers).
+- **Media features** These provide more specific details about the viewing environment, such as screen size, resolution, color depth, orientation, and even user preferences.
+
+Here are some commonly used media features:
+
+- `max-width` and `min-width`: Used to check for the maximum or minimum width of the viewport (viewable area).
+- `orientation`: Checks for portrait or landscape mode.
+- `resolution`: Checks for screen resolution (e.g., `device-pixel-ratio: 1.5` for high-resolution screens).
+- `color`: Checks for the number of colors the display can support.
+
+
+Let's see how we can use a media query to change the font size of a heading depending on the screen size:
+
+```css
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+```
+
+In this example:
+
+- We check for two different conditions using separate `@media` rules.
+- The first rule applies only when the screen width is **less than or equal to 768px** (typical for mobile devices).
+- The second rule applies only when the screen width is **greater than or equal to 768px** (typical for tablets and desktops).
+
+*This way, the heading font size is adjusted for different screen sizes, ensuring better readability on both mobile and larger screens.*
+
