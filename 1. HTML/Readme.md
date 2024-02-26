@@ -279,7 +279,7 @@ These elements and attributes work together to build structured tables in HTML.
 <textarea id="message" name="message" rows="5" cols="30" placeholder="Enter your message here"></textarea>
 ```
 
-**Additional input types**
+**More Input types**
 
 - `date`: Input for selecting a date (YYYY-MM-DD).
 - `datetime-local`: Input for selecting both date and time (YYYY-MM-DDTHH:mm).
