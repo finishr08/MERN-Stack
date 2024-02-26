@@ -73,14 +73,14 @@ There are three main ways to apply CSS to HTML elements:
   ```
   
 - Selectors target specific HTML elements using various patterns:
-  - **Element type:** `h1`, `p`, `div`
-  - **Class:** `.my-class`
-  - **ID:** `#unique-id`
-  - **Combinations:** `h1.special`, `div > p`
+  - **Element type** `h1`, `p`, `div`
+  - **Class** `.my-class`
+  - **ID** `#unique-id`
+  - **Combinations** `h1.special`, `div > p`
 - Properties define characteristics like color, background, font, and more:
   - `color`: Set text color using color names (`red`, `blue`), HEX codes (`#f00`), RGB/RGBA functions (`rgb(255, 0, 0)`, `rgba(255, 0, 0, 0.5)`), HSL/HSLA (`hsl(0, 100%, 50%)`, `hsla(0, 100%, 50%, 0.5)`).
   - `background-color`: Set element background color using the same methods as `color`.
-  - **Other properties:** Explore the vast CSS property set for various styling options.
+  - **Other properties** Explore the vast CSS property set for various styling options.
 
 ```html
 <!DOCTYPE html>
@@ -116,7 +116,7 @@ h1 {
 
 - Controls the horizontal alignment of text within an element.
 - Values:
-    - `left` (default): Aligns text to the left.
+    - `left`: (default): Aligns text to the left.
     - `right`: Aligns text to the right.
     - `center`: Centers text.
     - `justify`: Aligns text to both the left and right margins, creating a block of text with even edges.
@@ -135,10 +135,10 @@ h1 {
 
 - Used to specify values for various properties, including text-related ones.
 - Common units:
-    - `px` (pixels): Absolute unit based on screen resolution.
+    - `px`: Absolute unit based on screen resolution.
     - `em`: Relative unit based on the current font size.
     - `%`: Percentage of the parent element's value.
-    - `pt` (points): Equal to 1/72 of an inch.
+    - `pt`: Equal to 1/72 of an inch.
     - `rem`: Relative unit based on the root font size.
 
 ```css
@@ -170,7 +170,7 @@ h2 {
 **Letter Spacing**
 
 - Adjusts the spacing between individual characters.
-- Values:
+- **Values**
     - `normal`: Default spacing.
     - `<length>`: Specific length value (e.g., `px`, `em`).
 
@@ -317,7 +317,7 @@ div[id^="product"] { /* Selects any `div` element whose `id` starts with "produc
 
 **Pseudo-classes**
 
-- **:hover** Applies styles when the user hovers over an element with the cursor. 
+- `:hover`: Applies styles when the user hovers over an element with the cursor. 
 
 ```css
 button:hover {
@@ -325,7 +325,7 @@ button:hover {
 }
 ```
 
-- **:active** Applies styles when the user clicks or presses on an element. 
+- `:active`: Applies styles when the user clicks or presses on an element. 
 
 ```css
 a:active {
@@ -333,7 +333,7 @@ a:active {
 }
 ```
 
-- **:checked** Applies styles to checked radio buttons, checkboxes, and `<input type="checkbox">` elements. 
+- `:checked`: Applies styles to checked radio buttons, checkboxes, and `<input type="checkbox">` elements. 
 
 ```css
 input[type="checkbox"]:checked {
@@ -341,7 +341,7 @@ input[type="checkbox"]:checked {
 }
 ```
 
-- **:nth-of-type(n)** Applies styles to an element based on its position within a group of siblings. `n` can be a number (e.g., `:nth-of-type(2)` for the second element), `odd`, or `even`. 
+- `:nth-of-type(n)`: Applies styles to an element based on its position within a group of siblings. `n` can be a number (e.g., `:nth-of-type(2)` for the second element), `odd`, or `even`. 
 
 ```css
 li:nth-of-type(even) {
@@ -351,7 +351,7 @@ li:nth-of-type(even) {
 
 **Pseudo-elements**
 
-- **::first-letter** Applies styles to the first letter of an element (only block-level elements). Example:
+- `::first-letter`: Applies styles to the first letter of an element (only block-level elements). Example:
 
 ```css
 p::first-letter {
@@ -360,7 +360,7 @@ p::first-letter {
 }
 ```
 
-- **::first-line** Applies styles to the first line of an element (only block-level elements). Example:
+- `::first-line`: Applies styles to the first line of an element (only block-level elements). Example:
 
 ```css
 h2::first-line {
@@ -368,7 +368,7 @@ h2::first-line {
 }
 ```
 
-- **::selection** Applies styles to selected text. Example:
+- `::selection`: Applies styles to selected text. Example:
 
 ```css
 ::selection {
@@ -481,12 +481,12 @@ p::first-letter {
 
 In CSS, the box model is a fundamental concept that defines the layout of an element on a webpage. It's represented as a rectangular box composed of several components:
 
-- **Content** The actual content of the element, such as text, images, or other HTML elements.
-- **Padding** An optional transparent area surrounding the content.
-- **Border** An optional stylistic line surrounding the padding and content.
-- **Margin** An optional transparent area surrounding the element's entire outer border.
+- `Content`: The actual content of the element, such as text, images, or other HTML elements.
+- `Padding`: An optional transparent area surrounding the content.
+- `Border`:  An optional stylistic line surrounding the padding and content.
+- `Margin`:  An optional transparent area surrounding the element's entire outer border.
 
-**Height and Width:**
+**Height and Width**
 
    - **Property** `height`, `width`
    - **Purpose** Define the content area's dimensions (excluding padding and borders).
@@ -578,9 +578,9 @@ In CSS, the box model is a fundamental concept that defines the layout of an ele
 
 - **Purpose** Define measurements relative to a baseline value, allowing for layout adjustments based on other elements or the overall design.
 - **Types**
-    - **`em`** Relative to the **font size of the parent element**.
-    - **`rem`** Relative to the **font size of the root element (usually `html`)**.
-    - **`%`** Relative to the **width or height of the containing element**.
+    - `em` Relative to the **font size of the parent element**.
+    - `rem` Relative to the **font size of the root element (usually `html`)**.
+    - `%` Relative to the **width or height of the containing element**.
 - **Benefits**
     - **Responsiveness** Adapt to different screen sizes and user preferences.
     - **Maintainability** Avoids hard-coded pixel values, making updates easier.
@@ -606,8 +606,8 @@ h2 {
 
 Both `em` and `rem` are relative units used to scale elements based on another element's size. However, they differ in their reference point:
 
-- **`em`** Base on the **immediate parent element's font size**. This can lead to cascading growth if nested deeply, where sizes grow exponentially and become difficult to control.
-- **`rem`** Base on the **root element's (usually `html`) font size**. This offers a more consistent scale across the entire document, reducing the risk of cascading growth and making it easier to adjust the overall font size.
+- `em` Base on the **immediate parent element's font size**. This can lead to cascading growth if nested deeply, where sizes grow exponentially and become difficult to control.
+- `rem` Base on the **root element's (usually `html`) font size**. This offers a more consistent scale across the entire document, reducing the risk of cascading growth and making it easier to adjust the overall font size.
 
 **General Recommendation** Use `rem` in most cases for better maintainability and predictable scaling behavior.
 
@@ -681,10 +681,10 @@ The `transform` property in CSS allows you to manipulate the visual appearance o
 
 **Types of Transformations**
 
-- **Translation:** Moving an element in horizontal (using `translateX`) or vertical (using `translateY`) directions.
-- **Rotation:** Rotating an element around a specific point (using `rotate`).
-- **Scale:** Resizing an element, making it larger (`scaleX` and `scaleY`) or smaller.
-- **Skew:** Tilting an element along horizontal (`skewX`) or vertical (`skewY`) axes.
+- `Translation` Moving an element in horizontal (using `translateX`) or vertical (using `translateY`) directions.
+- `Rotation` Rotating an element around a specific point (using `rotate`).
+- `Scale` Resizing an element, making it larger (`scaleX` and `scaleY`) or smaller.
+- `Skew` Tilting an element along horizontal (`skewX`) or vertical (`skewY`) axes.
 
 **Applying Transformations**
 
@@ -814,10 +814,10 @@ A sticky element behaves like a mix of relative and fixed positioning. It starts
 
 This property controls the direction in which flex items are laid out within the flex container. Common values include:
 
-- **row** (default) Items are arranged horizontally from left to right.
-- **row-reverse** Items are arranged horizontally from right to left.
-- **column** Items are arranged vertically from top to bottom.
-- **column-reverse** Items are arranged vertically from bottom to top.
+- `row`: (default) Items are arranged horizontally from left to right.
+- `row-reverse`: Items are arranged horizontally from right to left.
+- `column`: Items are arranged vertically from top to bottom.
+- `column-reverse`: Items are arranged vertically from bottom to top.
 
 
 ```css
@@ -831,11 +831,11 @@ This property controls the direction in which flex items are laid out within the
 
 This property controls how flex items are distributed along the main axis in a flex container. Common values include:
 
-- **flex-start** Items are aligned to the start of the main axis.
-- **flex-end** Items are aligned to the end of the main axis.
-- **center** Items are centered along the main axis.
-- **space-between** Items are evenly distributed with space between them.
-- **space-around** Items are evenly distributed with space around them (including outer edges).
+- `flex-start`: Items are aligned to the start of the main axis.
+- `flex-end`: Items are aligned to the end of the main axis.
+- `center`: Items are centered along the main axis.
+- `space-between`: Items are evenly distributed with space between them.
+- `space-around`: Items are evenly distributed with space around them (including outer edges).
 
 
 ```css
@@ -943,6 +943,55 @@ This property controls how flex items are distributed along the main axis in a f
 ```
 
 These are just a few of the possibilities! Experiment with different combinations to achieve the desired layout for your flexbox elements.
+
+## CSS Animations and their Properties
+
+CSS animations allow you to create smooth transitions between different styles on your web page elements. It's a powerful tool for adding visual interest and interactivity to your website. Here's a breakdown of animations and their key properties:
+
+**@keyframes Rule**
+
+This rule defines the animation itself. You specify the initial and end states (keyframes) of the animation, along with any intermediate stages for a smoother transition.
+
+
+```css
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+```
+
+In this example, the `spin` animation rotates an element from 0 degrees to 360 degrees.
+
+**Animation Property**
+
+This property combines several animation properties into a single declaration, making your code cleaner and easier to manage.
+
+**Sub-properties**
+
+- `animation-name`: Refers to the name of the animation defined using `@keyframes`.
+- `animation-duration`: Specifies the time it takes for a single cycle of the animation to complete (e.g., `1s`).
+- `animation-timing-function`: Controls the speed curve of the animation (e.g., `ease-in-out`).
+- `animation-delay`: Defines a delay before the animation starts (e.g., `0.5s`).
+- `animation-iteration-count`: Specifies how many times the animation should repeat (e.g., `infinite`).
+- `animation-direction`: Controls the direction of the animation (e.g., `normal`, `reverse`, `alternate`).
+
+
+```css
+.my-element {
+  animation: spin 2s ease-in-out 1s alternate;
+}
+```
+
+Here, the `my-element` class applies the `spin` animation with a duration of 2 seconds, an ease-in-out timing function, starts after 1 second delay, alternates direction each cycle, and maintains the final rotation (forwards) after ending.
+
+**Animatable Properties**
+
+Almost any CSS property can be animated, including:
+
+- `Transform`: Move, rotate, scale, and skew elements.
+- `Opacity`: Fade elements in and out.
+- `Background-color`: Change the element's background color.
+- `Height/Width`: Resize elements dynamically.
 
 
 *I hope this help you!*
