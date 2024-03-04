@@ -179,3 +179,66 @@ let while = 10;           // Invalid (reserved keyword)
 ```
 
 *By understanding these operators and identifier rules, you can effectively write JavaScript code to manipulate data and create complex logic.*
+
+
+## Boolean Data Type
+
+- Represent logical values: `true` or `false`.
+- Used for conditional statements and comparisons.
+- Example:
+
+```javascript
+let isSunny = true;
+let isWeekend = false;
+
+if (isSunny && isWeekend) {
+  console.log("Perfect day for a picnic!");
+}
+```
+
+## String Data Type
+
+- Represent sequences of characters (text).
+- Enclosed in single (`'`) or double (`"`) quotes.
+- Can be used for displaying text, storing user input, etc.
+- **String Indexes:** You can access individual characters within a string using their zero-based index. The first character has an index of 0, the second has an index of 1, and so on.
+
+```javascript
+let message = "Hello, world!";
+
+console.log(message[0]); // Output: "H" (character at index 0)
+console.log(message.length); // Output: 14 (length of the string)
+```
+
+## Null Data Type
+
+- A special value that indicates the absence of an object value.
+- Not the same as an empty string or zero.
+- Often used to represent intentional absence of data.
+
+```javascript
+let emptyBox = null;
+
+console.log(emptyBox); // Output: null (no value assigned)
+```
+
+## Undefined Data Type
+
+- Represents a variable that has been declared but not assigned a value.
+- Also indicates a function's return value if the function doesn't explicitly return anything.
+- Can lead to errors if not handled properly.
+
+```javascript
+let name;
+
+console.log(name); // Output: undefined (declared but not assigned)
+
+function greet() {
+  // No return statement, so it implicitly returns undefined
+}
+
+let greeting = greet();
+console.log(greeting); // Output: undefined
+```
+
+*Understanding these data types is crucial for working with variables and data in JavaScript. By using Booleans for logical operations, Strings for text, Null for intentional absence, and Undefined for variables declared but not assigned, you can write clear and efficient code.*
