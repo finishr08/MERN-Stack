@@ -1,4 +1,4 @@
-// declare your first name and print its first 
+// declare your first name and print its first character
 
 let firstName ="Mustafa";
 
