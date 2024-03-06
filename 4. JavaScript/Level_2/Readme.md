@@ -15,7 +15,7 @@
 
 ## Linking JavaScript Files
 
-- **Method 1: `<script>` Tag:**
+- **`<script>` Tag:**
   - Place a `<script>` tag at the end of your HTML file to link an external JavaScript file:
     ```html
     <html>
@@ -235,3 +235,29 @@ In this example, the code checks the `grade` value against multiple conditions a
 - Choose the appropriate conditional statement based on the complexity of your conditions.
 
 *By effectively using these conditional statements, you can make your JavaScript code more dynamic and responsive to different scenarios.*
+
+### Switch Statements
+
+In JavaScript, switch statements offer a structured approach to handling multiple conditional checks based on the value of a single expression. They are particularly useful when you want to compare a value against several possible options and execute specific code blocks for each match.
+
+```javascript
+const day = "Wednesday";
+
+switch (day) {
+  case "Monday":
+    console.log("Start of the week!");
+    break;
+  case "Tuesday":
+  case "Wednesday":
+  case "Thursday":
+    console.log("Midweek grind.");
+    break;
+  case "Friday":
+    console.log("TGIF!");
+    break;
+  default:
+    console.log("Enjoy your weekend!");
+}
+```
+
+*In this example, the day variable is evaluated in the switch statement. If it matches "Monday", "Tuesday", "Wednesday", or "Thursday", the corresponding message is printed. Otherwise, the default message is used.*
