@@ -566,7 +566,7 @@ Alert and prompt are built-in functions in JavaScript used for interacting with 
   ```
   This code displays a prompt asking the user for their name. When the user enters their name and clicks "OK," the code stores the entered name in the `name` variable and then prints a greeting message using `console.log`. If the user clicks "Cancel" or closes the dialog box without entering anything, `null` will be assigned to `name`, and the console might log `"Hello, null!"` if appropriate error handling isn't implemented.
 
-**Important Considerations**
+**Important!**
 
 - Both `alert` and `prompt` can disrupt the user experience by pausing script execution and forcing users to interact with the modal dialog. Use them sparingly and consider alternative approaches like providing informational messages within the webpage itself or using more interactive UI elements.
 - The `prompt` function's return value can be `null`, so always check for this before using the entered text in your code to avoid potential errors. You might want to implement validation or provide a default value if the user cancels the prompt.
