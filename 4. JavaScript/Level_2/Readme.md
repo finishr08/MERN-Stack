@@ -261,3 +261,47 @@ switch (day) {
 ```
 
 *In this example, the day variable is evaluated in the switch statement. If it matches "Monday", "Tuesday", "Wednesday", or "Thursday", the corresponding message is printed. Otherwise, the default message is used.*
+
+## Alert & Prompt
+
+Alert and prompt are built-in functions in JavaScript used for interacting with the user through modal dialog boxes. Here's a detailed explanation of each:
+
+### Alert
+
+- **Purpose:** Displays a simple message box with an "OK" button that the user must click to dismiss.
+- **Syntax:**
+  ```javascript
+  alert(message);
+  ```
+  - `message`: The string you want to display in the alert box.
+- **Example:**
+  ```javascript
+  alert("Hello, world!");
+  ```
+  When you run this code, a modal window will appear with the message "Hello, world!" and an "OK" button. The user must click "OK" to proceed.
+
+### Prompt
+
+- **Purpose:** Displays a dialog box with a message, an input field for the user to enter text, and "OK" and "Cancel" buttons.
+- **Syntax:**
+  ```javascript
+  const userInput = prompt(message, defaultValue);
+  ```
+  - `message`: The text displayed before the input field.
+  - `defaultValue` (optional): The initial value displayed in the input field (can be a string or null).
+- **Return Value:**
+  - The function returns the text entered by the user if they click "OK," or `null` if they click "Cancel" or close the dialog box without entering any text.
+- **Example:**
+  ```javascript
+  const name = prompt("What is your name?");
+  console.log("Hello, " + name + "!");
+  ```
+  This code displays a prompt asking the user for their name. When the user enters their name and clicks "OK," the code stores the entered name in the `name` variable and then prints a greeting message using `console.log`. If the user clicks "Cancel" or closes the dialog box without entering anything, `null` will be assigned to `name`, and the console might log `"Hello, null!"` if appropriate error handling isn't implemented.
+
+**Important Considerations**
+
+- Both `alert` and `prompt` can disrupt the user experience by pausing script execution and forcing users to interact with the modal dialog. Use them sparingly and consider alternative approaches like providing informational messages within the webpage itself or using more interactive UI elements.
+- The `prompt` function's return value can be `null`, so always check for this before using the entered text in your code to avoid potential errors. You might want to implement validation or provide a default value if the user cancels the prompt.
+- These functions are generally used for simple interactions. For more complex user input and interactions, consider using HTML forms and JavaScript event listeners.
+
+By understanding the use cases and limitations of `alert` and `prompt`, you can effectively incorporate them in your JavaScript code when appropriate.
