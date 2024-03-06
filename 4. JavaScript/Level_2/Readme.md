@@ -304,4 +304,4 @@ Alert and prompt are built-in functions in JavaScript used for interacting with 
 - The `prompt` function's return value can be `null`, so always check for this before using the entered text in your code to avoid potential errors. You might want to implement validation or provide a default value if the user cancels the prompt.
 - These functions are generally used for simple interactions. For more complex user input and interactions, consider using HTML forms and JavaScript event listeners.
 
-By understanding the use cases and limitations of `alert` and `prompt`, you can effectively incorporate them in your JavaScript code when appropriate.
+*By understanding the use cases and limitations of `alert` and `prompt`, you can effectively incorporate them in your JavaScript code when appropriate.*
