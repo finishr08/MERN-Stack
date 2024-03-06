@@ -105,3 +105,116 @@
 - **Unary Operators:** `++` (increment), `--` (decrement), `typeof` (check data type), `delete` (remove property)
 - **Ternary Operator:** `condition ? exprIfTrue : exprIfFalse` (shorthand conditional)
 - **Bitwise Operators:** Perform bit-level operations (advanced usage)
+
+
+## Conditional Statements
+
+Conditional statements in JavaScript are fundamental for controlling the flow of your code based on certain conditions. Here's a breakdown of the main ones:
+
+### if Statement
+
+- Executes a block of code if a specified condition is true.
+- Syntax:
+  ```javascript
+  if (condition) {
+      // Code to execute if condition is true
+  }
+  ```
+- Example:
+  ```javascript
+  const age = 25;
+  if (age >= 18) {
+      console.log("You are an adult.");
+  }
+  ```
+
+### else Statement
+
+- Provides an alternative block of code to execute if the `if` condition is false.
+- Syntax:
+  ```javascript
+  if (condition) {
+      // Code to execute if condition is true
+  } else {
+      // Code to execute if condition is false
+  }
+  ```
+- Example:
+  ```javascript
+  const isWeekend = true;
+  if (isWeekend) {
+      console.log("Enjoy your weekend!");
+  } else {
+      console.log("Back to work!");
+  }
+  ```
+
+### else if Statement
+
+- Allows checking for multiple conditions sequentially.
+- Syntax:
+  ```javascript
+  if (condition1) {
+      // Code to execute if condition1 is true
+  } else if (condition2) {
+      // Code to execute if condition1 is false and condition2 is true
+  } else {
+      // Code to execute if all previous conditions are false
+  }
+  ```
+- Example:
+  ```javascript
+  const grade = 85;
+  if (grade >= 90) {
+      console.log("Excellent!");
+  } else if (grade >= 80) {
+      console.log("Very good!");
+  } else {
+      console.log("Keep practicing!");
+  }
+  ```
+
+### Switch Statement
+
+- Checks for a single value against multiple cases.
+- Syntax:
+  ```javascript
+  switch (expression) {
+      case value1:
+          // Code to execute if expression is equal to value1
+          break;
+      case value2:
+          // Code to execute if expression is equal to value2
+          break;
+      default:
+          // Code to execute if expression doesn't match any case
+  }
+  ```
+  - The `break` statement is crucial to prevent fall-through to the next case.
+- Example:
+  ```javascript
+  const day = "Tuesday";
+  switch (day) {
+      case "Monday":
+          console.log("Start of the week!");
+          break;
+      case "Tuesday":
+      case "Wednesday":
+      case "Thursday":
+          console.log("Midweek grind.");
+          break;
+      case "Friday":
+          console.log("TGIF!");
+          break;
+      default:
+          console.log("Enjoy your weekend!");
+  }
+  ```
+
+**Tips**
+
+- Always use curly braces `{}` to group the code within each conditional block, even if it's a single line.
+- Indentation is recommended for better readability, but not strictly enforced by JavaScript.
+- Choose the appropriate conditional statement based on the complexity of your conditions.
+
+*By effectively using these conditional statements, you can make your JavaScript code more dynamic and responsive to different scenarios.*
