@@ -1,5 +1,7 @@
 # Level-3 JavaScript
 
+## JavaScript Strings
+
 In JavaScript, strings are a fundamental data type used to represent sequences of characters, like text, numbers, symbols, or even emojis. They are essential for building user interfaces, processing data, and interacting with the web.
 
 Here's a key points about strings in JavaScript:
