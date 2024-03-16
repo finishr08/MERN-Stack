@@ -1202,4 +1202,32 @@ const intervalId = setInterval(() => {
 }, 1000);
 ```
 
+## Error Handling
+
+In JavaScript, the `try...catch...finally` statement provides a mechanism for handling errors that might occur during code execution.
+
+**Syntax:**
+
+```javascript
+try {
+  // Code that might throw an error (exception)
+} catch (error) {
+  // Code to handle the error (exception)
+  // The `error` parameter contains information about the error
+} finally {
+  // Code that always executes, regardless of errors (optional)
+}
+```
+
+
+- **try:** This block contains the code you want to execute. If an error occurs within this block, the execution jumps to the `catch` block.
+- **catch:** This block defines how to handle the error. It receives an argument, typically named `error` (or any other name), which is an object containing details about the error. You can access properties like `error.name` and `error.message` to understand the nature of the error.
+- **finally:** This block (if used) executes regardless of whether an error occurs or not. It's commonly used for cleanup tasks like closing files or releasing resources.
+
+**More!**
+
+- Use `try...catch` to gracefully handle errors and prevent your program from crashing.
+- Employ specific error checking within the `catch` block (e.g., `error.name`) for customized error handling.
+- The `finally` block is useful for ensuring essential code executes, even during errors.
+
 *I hope this is helpful for you!*
